@@ -3,7 +3,7 @@ Installation
 The Arquillian can be easily install from the GitHub repository.
 In Forge type:
 	
-	addon-install-from-git --url https://github.com/aslakknutsen/plugin-arquillian.git  --branch forge2
+	addon-install-from-git --url https://github.com/aslakknutsen/plugin-arquillian.git  --ref forge2
 
 If you've built the add-on from the source and have it in your local Maven repository, you can also do it this way: 
 
