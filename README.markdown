@@ -3,11 +3,11 @@ Installation
 The Arquillian can be easily install from the GitHub repository.
 In Forge type:
 	
-	addon-install-from-git --url https://github.com/aslakknutsen/plugin-arquillian.git  --branch forge2
+	addon-install-from-git --url https://github.com/aslakknutsen/plugin-arquillian.git  --ref forge2
 
 If you've built the add-on from the source and have it in your local Maven repository, you can also do it this way: 
 
-	addon-install --name arquillian-addon --groupId org.arquillian.forge --version 1.0.0-SNAPSHOT
+	addon-install --coordinate org.arquillian.forge:arquillian-addon,1.0.0-SNAPSHOT
 
 That's it! The plugin will be downloaded and installed.
 
@@ -17,7 +17,7 @@ Setting up an Arquillian profile
 Arquillian supports testing in multiple containers. This is done by using a Maven profile for each container. This makes it possible to have multiple containers configured side-by-side too.
 To add a new profile you use the arquillian setup command:
 
-	arquillian setup
+	arquillian-setup
 	
 This command will prompt which container to use. Remember that you can just re-run the arquillian setup command to install an additional container profile.
 For managed containers it might make sense to automatically download & install the container during the build to make installation on a build server more easy. This is only supported for AS7 at this moment.
